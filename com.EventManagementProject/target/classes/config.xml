@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+ 
+<property name="hibernate.connection.Driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/Eventmgnt</property>
+<property name="hibernate.connection.user">root</property>
+<property name="hibernate.connection.password">Svandana@25</property>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="hibernate.show_sql">true</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+  <mapping class="com.EventManagement.Entities.Organizer"/>
+  <mapping class="com.EventManagement.Entities.Events"/>
+  <mapping class="com.EventManagement.Entities.Tickets"/>
+  <mapping class="com.EventManagement.Entities.Participants"/>
+  <mapping class="com.EventManagement.Entities.Event_participants"/>
+  <mapping class="com.EventManagement.Entities.Venues"/>
+  <mapping class="com.EventManagement.Entities.Sponsorship"/>
+
+</session-factory>
+</hibernate-configuration>
